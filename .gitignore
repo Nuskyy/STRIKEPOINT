@@ -1,0 +1,8 @@
+node_modules
+dist
+server/data
+# assets Poly Haven (135 Mo) : récupérables avec « node scripts/fetch-assets.mjs »
+public/assets
+downloads
+backups
+*.zip

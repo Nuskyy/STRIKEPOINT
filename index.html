@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>STRIKEPOINT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app"></div>
+
+  <div id="hud" class="hidden">
+    <div id="damage-overlay"></div>
+    <div id="scope-overlay" class="hidden"><div class="scope-glass"></div><div class="scope-h"></div><div class="scope-v"></div></div>
+    <div id="crosshair"><i class="ch t"></i><i class="ch b"></i><i class="ch l"></i><i class="ch r"></i><i class="dot"></i></div>
+    <div id="hitmarker"><i></i><i></i><i></i><i></i></div>
+    <div id="dmg-indicators"></div>
+    <canvas id="minimap" width="200" height="200"></canvas>
+    <div id="topbar"><div id="score-a">0</div><div id="mode-info"></div><div id="score-b">0</div></div>
+    <div id="killfeed"></div>
+    <div id="center-msg"></div>
+    <div id="sub-msg"></div>
+    <div id="popups"></div>
+    <div id="streak"></div>
+    <div id="prompt"></div>
+    <div id="reload-hint">RECHARGER [R]</div>
+    <div id="weapon-info">
+      <div id="weapon-name"></div>
+      <div id="ammo"><span id="ammo-mag">30</span><span class="sep">/</span><span id="ammo-res">180</span></div>
+      <div id="grenades"></div>
+    </div>
+    <div id="health"><div id="health-bar"></div></div>
+    <div id="fps" class="hidden"></div>
+    <div id="scoreboard" class="hidden"></div>
+    <div id="death-screen" class="hidden"><div class="title">K.I.A.</div><div id="death-by"></div><div id="respawn-timer"></div></div>
+  </div>
+
+  <div id="menu"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
